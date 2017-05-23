@@ -1,8 +1,65 @@
 /*
 Colors: 
-#E54E79;
-#E56385;
-#00B2A9;
-#75726C;
-#EDE9E2
+#E54E79 rosa oscuro;
+#E56385 rosa claro;
+#00B2A9 verde;
+#75726C gris oscuro;
+#EDE9E2 gris claro;
 */
+
+body{
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contenedor-navegador{
+	position: fixed;
+	top: 0;
+	width: 100%;
+} 
+.navegador{
+ 	background-color: #E54E79;
+ 	height: 60px;
+ 	position: relative;
+}
+
+.logo{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.imagen{
+	background-image: url('../img/logo-white.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 40px;
+	top: 10px;
+}
+
+.navegador ul{
+	text-align: right;
+	width: 90%;
+	margin:0;
+	position: absolute;
+	top: 20px;
+	bottom: 10px;
+}
+
+.navegador li{
+	float: none;
+	display: inline-block;
+	list-style: none;
+}
+
+.navegador li a{
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 21px;
+}
+.navegador li a:hover{
+	background-color: #E56385;
+}
