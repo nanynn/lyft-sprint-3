@@ -7,10 +7,16 @@ Colors:
 #EDE9E2 gris claro;
 */
 
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body{
 	font-family: 'Raleway', sans-serif;
-	width: 100%;
-	margin: 0 auto;
 }
 
 /*********** Navegador o navbar ********/
@@ -80,12 +86,13 @@ body{
 	background-image: url('../img/cropped-Lyft-Promo-Codes-car-1.jpg');
 	background-size: 100%;
 	background-repeat:no-repeat;
+	background-attachment: fixed;
 }
 
 .contenedor-header{
     background-color: #EDE9E2;
     width: 30%;
-    height: 250px;
+    height: 290px;
     padding: 40px;
     position: relative;
     bottom: 390px;
@@ -107,27 +114,20 @@ body{
 
 .contenedor-header input{
 	display: block;
-	border:none;
 	color: #75726C;
 	background-color: #EDE9E2;
-	border-top: none;
-	border-right: none;
-	border-left: none;
+	border:none;
 	border-bottom: 2px solid #BEBAB3;
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 8px;
 	outline: 0;
+	font-size: 12px;
 }
 .contenedor-header input::placeholder{
 	color: #B1ADA7;
 	font-family: 'Raleway', sans-serif;
 }
 
-.contenedor-header input:placeholder-shown{
-	font-size: 12px;
-	padding-bottom:8px;
-
-}
 .contenedor-header a{
 	display: inline-block;
 	background-color: #E54E79;
@@ -148,9 +148,7 @@ body{
 /****************seccion dos****************/
 .seccion-dos{
 	width: 100%;
-	height: 400px;
 	background-color: #00B2A9;
-	display: block;
 	padding-top: 20px;
 }
 .titulo{
@@ -164,27 +162,33 @@ body{
 .titulo h1{
 	margin: 0;
 	font-size: 30px;
-	position: absolute;
+	text-align: center;
+/*	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 }
 
+
 .autos{
-	height: 60%;
 	width: 80%;
 	background-color: #EDE9E2;
 	margin: 0 auto;
-	position: relative;
+}
+
+.contenedor-autos {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
 }
 
 .cars{
-	display: inline-block;
-	padding-top:40px;
-	padding-left:40px;
+	flex: 1;
 	font-size: 30px;
 	color: #75726C;
+	margin: 20px 0;
 }
+
 .cars input{
 	border-top: none;
 	border-right: none;
@@ -192,21 +196,23 @@ body{
 	border-bottom: 2px solid #75726C;
 	background-color: #EDE9E2;
 	outline: 0;
-	width: 200px;
+	width: 90%;
 }
 
 .autos a{
-	display: block;
+	display: table;
 	text-decoration: none;
 	color: #fff;
 	padding: 20px;
 	background-color: #00B2A9;
 	border-radius: 15px;
 	width: 80%;
-	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	/*position: absolute;
 	top: 70%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 	box-shadow: 0 0 3px 0 #000;
 }
 
@@ -214,12 +220,6 @@ body{
 	background-color: #0A877F;
 }
 
-.autos p{
-	position: absolute;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
 /*************footer***********/
 
@@ -247,7 +247,7 @@ body{
 
 .derecha {
 	float: right;
-	bottom: 90px;
+	bottom: 40px;
     right: 100px;
     position: relative;
 }
