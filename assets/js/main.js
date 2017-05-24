@@ -31,6 +31,10 @@ boton.addEventListener('click', function(e){
 	espacio.classList.add('cuadrado');
 	contenedor.appendChild(espacio);
 
+	var imagen = document.createElement('img');
+	imagen.classList.add('autito');
+	espacio.appendChild(imagen);
+
 });
 
 
