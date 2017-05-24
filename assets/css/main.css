@@ -79,10 +79,6 @@ body{
 	position: relative;
 }
 
-/*.imagen{
-	width: 100%;
-	height: 100%;
-}*/
 .uno{
 	background-image: url('../img/cropped-Lyft-Promo-Codes-car-1.jpg');
 	background-size: 100%;
@@ -152,9 +148,10 @@ body{
 /****************seccion dos****************/
 .seccion-dos{
 	width: 100%;
-	height: 450px;
+	height: 90vh;
 	background-color: #00B2A9;
 	padding-top: 20px;
+	position: relative;
 }
 .titulo{
 	padding: 20px;
@@ -176,6 +173,9 @@ body{
 	height: 215px;
 	background-color: #EDE9E2;
 	margin: 0 auto;
+	position: absolute;
+	top: 250px;
+	left: 108px;
 }
 
 .contenedor-autos {
@@ -186,15 +186,13 @@ body{
 
 .cars{
 	flex: 1;
-	font-size: 40px;
+	font-size: 30px;
 	color: #75726C;
 	margin: 35px 0;
 }
 
 .cars input{
-	border-top: none;
-	border-right: none;
-	border-left: none;
+	border: none;
 	border-bottom: 2px solid #75726C;
 	background-color: #EDE9E2;
 	outline: 0;
@@ -213,16 +211,13 @@ body{
 	display: table;
 	text-decoration: none;
 	color: #fff;
-	padding: 20px;
+	font-size: 18px;
+	padding: 15px;
 	background-color: #00B2A9;
 	border-radius: 15px;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
-	/*position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 	box-shadow: 0 0 3px 0 #000;
 }
 
@@ -286,4 +281,31 @@ body{
 .creditos p{
 	margin-left: 80px;
 	color: #D8D4CF;
+}
+
+/************** Clases de Js *******************/
+.cambiar{
+	display: none;
+}
+
+.cuadrado{
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    top: 175px;
+    left: 108px;
+	background-color: #75726C ;
+	border:30px solid #fff;
+}
+
+.mensaje{
+  position: absolute;	
+  background-color: #75726C;
+  color: #fff;
+  font-style: bold;
+  padding: 20px;
+  border-radius: 15px;
+  top: 34%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
