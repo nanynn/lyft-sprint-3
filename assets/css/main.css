@@ -73,16 +73,17 @@ body{
 }
 
 /******** Header ********/
-.seccion-uno{
+.seccion{
 	width: 100%;
 	height: 500px;
+	position: relative;
 }
 
-.imagen{
+/*.imagen{
 	width: 100%;
 	height: 100%;
-}
-.dos{
+}*/
+.uno{
 	background-image: url('../img/cropped-Lyft-Promo-Codes-car-1.jpg');
 	background-size: 100%;
 	background-repeat:no-repeat;
@@ -91,12 +92,12 @@ body{
 
 .contenedor-header{
     background-color: #EDE9E2;
-    width: 30%;
+    width: 40%;
     height: 290px;
     padding: 40px;
-    position: relative;
-    bottom: 390px;
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 110px;
 }
 .contenedor-header h1{
 	margin: 0;
@@ -123,7 +124,7 @@ body{
 	outline: 0;
 	font-size: 12px;
 }
-.contenedor-header input::placeholder{
+.contenedor-header input[placeholder]{
 	color: #B1ADA7;
 	font-family: 'Raleway', sans-serif;
 }
@@ -138,6 +139,9 @@ body{
 	margin-top:10px;
 	box-shadow: 0 0 3px 0 #000;
 }
+.contenedor-header a:hover{
+	background-color: #E56385;
+}
 
 .contenedor-header p{
 	padding-top: 5px;
@@ -148,6 +152,7 @@ body{
 /****************seccion dos****************/
 .seccion-dos{
 	width: 100%;
+	height: 450px;
 	background-color: #00B2A9;
 	padding-top: 20px;
 }
@@ -155,7 +160,7 @@ body{
 	padding: 20px;
 	color: #75726C;
 	background-color: #EDE9E2;
-	margin: 30px 0;
+	margin: 40px 0;
 	position: relative;
 }
 
@@ -163,15 +168,12 @@ body{
 	margin: 0;
 	font-size: 30px;
 	text-align: center;
-/*	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 }
 
 
 .autos{
 	width: 80%;
+	height: 215px;
 	background-color: #EDE9E2;
 	margin: 0 auto;
 }
@@ -184,9 +186,9 @@ body{
 
 .cars{
 	flex: 1;
-	font-size: 30px;
+	font-size: 40px;
 	color: #75726C;
-	margin: 20px 0;
+	margin: 35px 0;
 }
 
 .cars input{
@@ -196,7 +198,15 @@ body{
 	border-bottom: 2px solid #75726C;
 	background-color: #EDE9E2;
 	outline: 0;
-	width: 90%;
+	width: 80%;
+}
+
+.cars input[placeholder]{
+	font-size: 16px;
+}
+
+.cars input[placeholder]:hover{
+	border-bottom: 2px solid #00B2A9;
 }
 
 .autos a{
@@ -225,7 +235,7 @@ body{
 
 .seccion-tres{
 	width: 100%;
-	height: 180px;
+	height: 120px;
 	background-color: #75726C;
 	position: relative;
 }
@@ -242,6 +252,8 @@ body{
 }
 
 .izquierda p{
+	padding-top: 10px;
+	font-size: 14px;
 	color: #EDE9E2;
 }
 
