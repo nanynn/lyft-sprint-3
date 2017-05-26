@@ -13,11 +13,13 @@ Colors:
 	-moz-box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
+}/*Esto se realiza para que la pagina de html pierda los atributos que trae por defecto
+y asi no afecte a mis futuros estilos*/
 
 body{
 	font-family: 'Raleway', sans-serif;
 }
+/* Aquí vinculo la familia tipografica*/
 
 /*********** Navegador o navbar ********/
 .contenedor-navegador{
@@ -25,7 +27,9 @@ body{
 	top: 0;
 	width: 100%;
 	z-index: 9999;
-} 
+} /* Deje el contenedor fijo en la parte superior porque las instrucciones
+indicaban que tenia que seguirme a medida que avanzaba con el scroll*/
+
 .navegador{
  	background-color: #E54E79;
  	height: 60px;
@@ -37,7 +41,7 @@ body{
 	width: 50px;
 	height: 50px;
 }
-
+/* primero le dí las dimensiones y el lugar del contenedor de la imagen */
 .imagen-uno{
 	background-image: url('../img/logo-white.png');
 	background-size: 100%;
@@ -45,8 +49,7 @@ body{
 	position: absolute;
 	left: 100px;
 	top: 10px;
-}
-
+}/* luego vincule la imagen*/
 .navegador ul{
 	text-align: right;
 	width: 90%;
@@ -71,20 +74,22 @@ body{
 .navegador li a:hover{
 	background-color: #E56385;
 }
+/* Esta propiedad permite que al pasar el mouse cambie de color el boton*/
 
 /******** Header ********/
 .seccion{
 	width: 100%;
 	height: 500px;
 	position: relative;
-}
+}/* la foto la puse sobre la section porque como comente antes, el dejarla sobre
+un div me afectaba el resto de la información*/
 
 .uno{
 	background-image: url('../img/cropped-Lyft-Promo-Codes-car-1.jpg');
 	background-size: 100%;
 	background-repeat:no-repeat;
 	background-attachment: fixed;
-}
+}/* vincule la imagen*/
 
 .contenedor-header{
     background-color: #EDE9E2;
@@ -94,7 +99,7 @@ body{
     position: absolute;
     right: 0;
     top: 110px;
-}
+}/* aqui esta el recuadro gris con información sobre la foto*/
 .contenedor-header h1{
 	margin: 0;
 	color: #00B2A9;
@@ -113,17 +118,18 @@ body{
 	display: block;
 	color: #75726C;
 	background-color: #EDE9E2;
-	border:none;
-	border-bottom: 2px solid #BEBAB3;
+	border:none;/* le quito el border al input*/
+	border-bottom: 2px solid #BEBAB3;/* dejo solo el color inferior*/
 	width: 100%;
 	padding-bottom: 8px;
-	outline: 0;
+	outline: 0;/* este dato permite quitar la propiedad que te marca el input
+	todo el cuadrado y asi queda fiel al estilo que le dí*/
 	font-size: 12px;
 }
 .contenedor-header input[placeholder]{
 	color: #B1ADA7;
 	font-family: 'Raleway', sans-serif;
-}
+}/* Se le dan estilos al placeholder para que no quede con los valores por defecto*/
 
 .contenedor-header a{
 	display: inline-block;
@@ -133,7 +139,7 @@ body{
 	padding: 10px;
 	border-radius: 15px;
 	margin-top:10px;
-	box-shadow: 0 0 3px 0 #000;
+	box-shadow: 0 0 3px 0 #000;/* esto permite una sombra paralela difuminada*/
 }
 .contenedor-header a:hover{
 	background-color: #E56385;
@@ -148,7 +154,7 @@ body{
 /****************seccion dos****************/
 .seccion-dos{
 	width: 100%;
-	height: 90vh;
+	height: 90vh; /* este número permite que se adapte al contenido*/
 	background-color: #00B2A9;
 	padding-top: 20px;
 	position: relative;
@@ -181,8 +187,8 @@ body{
 .contenedor-autos {
 	width: 80%;
 	margin: 0 auto;
-	display: flex;
-}
+	display: flex; /*el display flex permite que todo el contenido que yo tenga se divida en columnas iguales*/
+}/* caja que contiene los dos autos*/
 
 .cars{
 	flex: 1;
@@ -233,7 +239,7 @@ body{
 	height: 120px;
 	background-color: #75726C;
 	position: relative;
-}
+}/*Se manipula la caja para dar posiciones al resto de los elementos*/
 
 .izquierda{
  	padding-left: 80px;
@@ -296,7 +302,7 @@ body{
     left: 108px;
 	background-color: #75726C ;
 	border:30px solid #fff;
-}
+}/*sobre este elemento se posiciona el tablero*/
 
 .mensaje{
   position: absolute;	
@@ -308,11 +314,11 @@ body{
   top: 34%; 
   left: 50%;
   transform: translate(-50%, -50%);
-}
+}/* estos son span creados dinamicamente para las validaciones de los autos*/
 
 .autito{
 	height: 100px;
 	width: 60px;
 	background-image: url(../img/car.png);
 	background-size: 100%
-}
+}/*este es el espacio que contiene el dato del juego*/

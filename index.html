@@ -7,17 +7,24 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<!-- Primer espacio donde esta el navbar o menu de arriba, tiene dos contenedores uno para el color y la position. -->
 	<div class="contenedor-navegador">
+	<!-- Este contenedor tiene todos los elementos que van dentro del navbar -->
 		<nav class="navegador">
+		<!-- la imagen la puse en un div para poder moverla en el espacio -->
 			<div class="logo imagen-uno"></div>
 			<ul>
+			<!-- los botones son vinculos para poder estilos mas fácilmente en css -->
 				<li><a href="#">Drive</a></li>
 				<li><a href="#">Explore</a></li>
 				<li><a href="#">Help</a></li>
 			</ul>
 		</nav>
 	</div>
+	<!-- esta segunda sección contiene la imagen con el celular y el recuadro gris sobre ella -->
+	<!-- La imagen esta sobre la section porque inicialmente hice un div pero me interferia los elementos de más abajo y no me dejaba centrarlo -->
 	<header class="seccion uno">
+		<!-- Este contenedor tiene la información del recuadro sobre la imagen  -->
 		<div class="contenedor-header">
 			<h1>TURN MILES INTO MONEY</h1>
 			<label for="">SIGN UP TO DRIVE LYFT</label>
@@ -26,28 +33,38 @@
 			<p>Already applied? Check the status of your application here. Earn money for inviting friend to drive. Learn more.</p>
 		</div>
 	</header>
+	<!-- esta sección contiene el juego del auto -->
 	<section class="seccion-dos">
+		<!-- para poder dar background color al titulo lo puse sobre un div y asi editarlo mas rápido en css -->
 		<div class="titulo"><h1>PLAY WITH LYFT</h1></div>
+		<!-- este contiene a los autos -->
 		<div class="autos">
+			<!-- Los autos tienen un contenedor para los íconos, inputs y boton -->
 			<div class="contenedor-autos">
 				<div class="cars">
 					<label for=""><i class="fa fa-car" aria-hidden="true"></i></label>
+					<!-- los inputs tienen id porque así se pueden obtener las coordenadas que entrega el usuario y validar que sean correctas los datos ingresados -->
 					<input type="text" placeholder="X coordinate" id="xcor">
 				</div>
 				<div class="cars">
 					<label for=""><i class="fa fa-car" aria-hidden="true"></i></label>
+					<!-- los inputs tienen id porque así se pueden obtener las coordenadas que entrega el usuario y validar que sean correctas los datos ingresados -->
 					<input type="text" placeholder="Y coordinate" id="ycor">
 				</div>
 			</div>
+			<!-- con el boton se activan las funcionalidades de js, así que por eso tiene un identificador -->
 			<a href="#" id="btn">START</a>
 		</div>
 	</section>
 	<footer>
+	<!-- esta sección corresponde al footer y tiene dos contenedores para distribuir los datos -->
+		<!-- acabo de notar que esta sección es super innecesaria xD -->
 		<div class="seccion-tres">
 		<div class="izquierda">
 			<h3>Sprint 3 - Project</h3>
 			<p>You can custom the footer and its content</p>
 		</div>
+			<!-- este contenedor tiene los datos de redes sociales con los iconos -->
 			<div class="derecha">
 				<h3>Links</h3>
 				<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
